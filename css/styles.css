@@ -114,8 +114,13 @@ header {
     color: #fff; }
 
 .button {
-  background-color: #50666a;
-  border-bottom: 3px solid #3a4a4d;
+  background-color: #449bbe;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#62abc9), to(#449bbe));
+  background-image: -webkit-linear-gradient(top, #62abc9, #449bbe);
+  background-image: -moz-linear-gradient(top, #62abc9, #449bbe);
+  background-image: -ms-linear-gradient(top, #62abc9, #449bbe);
+  background-image: -o-linear-gradient(top, #62abc9, #449bbe);
+  border-radius: 1px;
   color: #fff;
   display: inline-block;
   font-family: "brandon-grotesque", sans-serif;
@@ -123,7 +128,11 @@ header {
   font-weight: 400;
   padding: 0.85em 1.5em;
   text-decoration: none;
+  text-shadow: 0 1px 0 #50666a;
   text-transform: uppercase; }
   .button:hover {
-    background-color: #5b7479;
-    border-bottom: 3px solid #45585c; }
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#75b5cf), to(#57a5c5));
+    background-image: -webkit-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -moz-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -ms-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -o-linear-gradient(top, #75b5cf, #57a5c5); }
