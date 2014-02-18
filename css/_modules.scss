@@ -1,1 +1,19 @@
-/* Modules */
+/* Modules */// Buttons 
+.button {
+	background-color: lighten($blue-gray, 10);
+	border-bottom: 3px solid lighten($blue-gray, 5);
+	color: #fff;
+	display: inline-block;
+	font: {
+		family: "brandon-grotesque", sans-serif;
+		size: em(14px);
+		weight: 400;
+	}
+	padding: 0.85em 1.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+	&:hover {
+		background-color: lighten($blue-gray, 15);
+		border-bottom: 3px solid lighten($blue-gray, 8);
+	}
+}
