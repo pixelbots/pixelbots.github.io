@@ -16,6 +16,7 @@ header {
 		font-size: em(54px);
 		margin: 1.5em 0 2.5em 0;
 		position: relative;
+		text-align: center;
 		z-index: 3;
 		em {
 			font-style: normal;
@@ -40,7 +41,6 @@ header {
     @include breakpoint(mobile-portrait) {
     	h2 {
     		font-size: em(32px);
-    		text-align: center;
     	}
     	nav .button {
     		display: none;
@@ -49,7 +49,6 @@ header {
     @include breakpoint(tablet-portrait) {
     	h2 {
     		font-size: em(42px);
-    		text-align: center;
     	}
     }
 }
@@ -81,6 +80,45 @@ header {
 	&.-dark {
 		background: $blue-gray;
 		color: #fff;
+	}
+}
+
+
+// Team module
+.team {
+	 .row {
+	 	margin-bottom: 30px;
+	 }
+}
+.team__member {
+	text-align: center;
+	a {
+		text-decoration: none;
+	}
+	img {
+		opacity: 0.75;
+		width: 75%;
+	}
+	h4 {
+		color: #fff;
+		font-size: em(18px);
+		margin: 0.5em 0 0 0;
+	}
+	h4 + p {
+		color: lighten($blue-gray, 20);
+		font-size: em(14px);
+		margin-top: 3px;
+	}
+	&:hover {
+		img {
+			opacity: 1;
+		}
+	}
+	@include breakpoint(mobile-portrait) {
+		padding: 20px 0;
+		img {
+			max-width: 70%;
+		}
 	}
 }
 
