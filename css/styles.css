@@ -139,6 +139,31 @@ header {
       .team__member img {
         max-width: 70%; } }
 
+footer {
+  text-align: center;
+  overflow: hidden; }
+
+.footer__logo {
+  background: url(../img/logo_alt.png) left top no-repeat;
+  background-size: 100%;
+  margin: 60px auto 0 auto;
+  max-width: 175px;
+  min-height: 235px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .footer__logo {
+      margin: 60px auto 0 auto;
+      min-height: 200px;
+      width: 50%; } }
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .footer__logo {
+      min-height: 235px; } }
+
+.footer__logo + p {
+  font-size: 0.66667em; }
+
 iframe {
   width: 90%; }
   @media only screen and (max-width: 767px) {

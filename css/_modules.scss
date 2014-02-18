@@ -124,6 +124,34 @@ header {
 }
 
 
+// Footer module
+footer {
+	text-align: center;
+	overflow: hidden;
+}
+.footer__logo {
+	background: url(../img/logo_alt.png) left top no-repeat;
+	background-size: 100%;
+	margin: 60px auto 0 auto;
+	max-width: 175px;
+	min-height: 235px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	@include breakpoint(mobile-portrait) {
+		margin: 60px auto 0 auto;
+		min-height: 200px;
+		width: 50%;
+	}
+	@include breakpoint(mobile-landscape) {
+		min-height: 235px;
+	}
+}
+.footer__logo + p {
+	font-size: em(14px);
+}
+
+
 // Sharpspring form
 iframe {
 	width: 90%;
