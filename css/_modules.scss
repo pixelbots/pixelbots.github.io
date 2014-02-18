@@ -123,6 +123,46 @@ header {
 	}
 }
 
+
+// Sharpspring form
+iframe {
+	width: 90%;
+	@include breakpoint(mobile-portrait) {
+		width: 100%;
+	}
+}
+.sharpspring_form {
+  	width: 100%;
+  	.field {
+	   padding-bottom: 15px;
+	}
+  	input, textarea {
+ 		background-color: #f8f8f8;
+	    border: 1px solid #dfdfdf;
+	    color: #555;
+	    font-size: 18px;
+	    padding: 10px;
+	    margin-top: 7px;
+  	}
+  	label {
+	    color: #aaa;
+	    font-family: "brandon-grotesque", sans-serif;
+	    font-size: 14px;
+	    font-weight: 300;
+	    text-transform: uppercase;
+	    &.error {
+			color: #fff;
+		    margin-left: 0;
+		    box-shadow: none;
+		    padding: 5px 10px;
+		}
+	}
+	#submit_button {
+		@extend .button;
+	}
+}
+
+
 // Buttons 
 .button {
 	background-color: $blue;
@@ -145,9 +185,10 @@ header {
 	text-transform: uppercase;
 	&:hover {
 		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(lighten($blue, 13)), to(lighten($blue, 5)));
-	background-image: -webkit-linear-gradient(top, lighten($blue, 13), lighten($blue, 5)); 
-	background-image:    -moz-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
-    background-image:     -ms-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
-    background-image:      -o-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
+		background-image: -webkit-linear-gradient(top, lighten($blue, 13), lighten($blue, 5)); 
+		background-image:    -moz-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
+	    background-image:     -ms-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
+	    background-image:      -o-linear-gradient(top, lighten($blue, 13), lighten($blue, 5));
 	}
 }
+

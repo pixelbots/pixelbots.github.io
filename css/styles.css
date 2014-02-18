@@ -82,7 +82,7 @@ header {
   @media only screen and (max-width: 767px) {
     header h2 {
       font-size: 1.52381em; }
-    header nav .button {
+    header nav .button, header nav .sharpspring_form #submit_button, .sharpspring_form header nav #submit_button {
       display: none; } }
   @media only screen and (min-width: 768px) and (max-width: 959px) {
     header h2 {
@@ -139,7 +139,36 @@ header {
       .team__member img {
         max-width: 70%; } }
 
-.button {
+iframe {
+  width: 90%; }
+  @media only screen and (max-width: 767px) {
+    iframe {
+      width: 100%; } }
+
+.sharpspring_form {
+  width: 100%; }
+  .sharpspring_form .field {
+    padding-bottom: 15px; }
+  .sharpspring_form input, .sharpspring_form textarea {
+    background-color: #f8f8f8;
+    border: 1px solid #dfdfdf;
+    color: #555;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 7px; }
+  .sharpspring_form label {
+    color: #aaa;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase; }
+    .sharpspring_form label.error {
+      color: #fff;
+      margin-left: 0;
+      box-shadow: none;
+      padding: 5px 10px; }
+
+.button, .sharpspring_form #submit_button {
   background-color: #449bbe;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#62abc9), to(#449bbe));
   background-image: -webkit-linear-gradient(top, #62abc9, #449bbe);
@@ -156,7 +185,7 @@ header {
   text-decoration: none;
   text-shadow: 0 1px 0 #50666a;
   text-transform: uppercase; }
-  .button:hover {
+  .button:hover, .sharpspring_form #submit_button:hover {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#75b5cf), to(#57a5c5));
     background-image: -webkit-linear-gradient(top, #75b5cf, #57a5c5);
     background-image: -moz-linear-gradient(top, #75b5cf, #57a5c5);
