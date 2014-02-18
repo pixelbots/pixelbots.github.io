@@ -12,6 +12,9 @@ body {
   margin: 0;
   padding: 0;
   min-height: 1500px; }
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 18px; } }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "brandon-grotesque", sans-serif;
@@ -23,6 +26,9 @@ h1, h2, h3, h4 {
 
 h3 {
   font-size: 1.71429em; }
+  @media only screen and (max-width: 767px) {
+    h3 {
+      font-size: 1.14286em; } }
 
 p {
   color: #333;
@@ -72,6 +78,16 @@ header {
     top: 0;
     width: 100%;
     z-index: 2; }
+  @media only screen and (max-width: 767px) {
+    header h2 {
+      font-size: 1.52381em;
+      text-align: center; }
+    header nav .button {
+      display: none; } }
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    header h2 {
+      font-size: 2em;
+      text-align: center; } }
 
 .header__logo {
   background: url(../img/logo.png) left top no-repeat;
@@ -81,6 +97,10 @@ header {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .header__logo {
+      margin: 0 auto;
+      width: 50%; } }
 
 .layer {
   padding: 50px 0;
@@ -94,8 +114,8 @@ header {
     color: #fff; }
 
 .button {
-  background-color: #3a4a4d;
-  border-bottom: 3px solid #2f3c3f;
+  background-color: #50666a;
+  border-bottom: 3px solid #3a4a4d;
   color: #fff;
   display: inline-block;
   font-family: "brandon-grotesque", sans-serif;
@@ -105,5 +125,5 @@ header {
   text-decoration: none;
   text-transform: uppercase; }
   .button:hover {
-    background-color: #45585c;
-    border-bottom: 3px solid #354447; }
+    background-color: #5b7479;
+    border-bottom: 3px solid #45585c; }
