@@ -30,4 +30,19 @@ p {
   margin: 1em 0; }
 
 /* Layout styles */
+.-left {
+  float: left; }
+
+.-right {
+  float: right; }
+
+.-text-center {
+  text-align: center; }
+
+.-text-left {
+  text-align: left; }
+
+.-text-right {
+  text-align: right; }
+
 /* Modules */

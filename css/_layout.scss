@@ -2,3 +2,24 @@
 
 // Skeleton grid
 @import "vendor/skeleton.css";
+
+
+// Float modifiers
+.-left {
+	float: left;
+}
+.-right {
+	float: right;
+}
+
+
+// Text alignment modifiers
+.-text-center {
+	text-align: center;
+}
+.-text-left {
+	text-align: left;
+}
+.-text-right {
+	text-align: right;
+}
