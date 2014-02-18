@@ -97,7 +97,6 @@ header {
 		text-decoration: none;
 	}
 	img {
-		opacity: 0.75;
 		width: 75%;
 	}
 	h4 {
@@ -109,11 +108,6 @@ header {
 		color: lighten($blue-gray, 20);
 		font-size: em(14px);
 		margin-top: 0;
-	}
-	&:hover {
-		img {
-			opacity: 1;
-		}
 	}
 	@include breakpoint(mobile-portrait) {
 		padding: 20px 0;

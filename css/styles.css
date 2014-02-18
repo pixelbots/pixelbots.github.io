@@ -121,7 +121,6 @@ header {
   .team__member a {
     text-decoration: none; }
   .team__member img {
-    opacity: 0.75;
     width: 75%; }
   .team__member h4 {
     color: #fff;
@@ -131,8 +130,6 @@ header {
     color: #50666a;
     font-size: 0.66667em;
     margin-top: 0; }
-  .team__member:hover img {
-    opacity: 1; }
   @media only screen and (max-width: 767px) {
     .team__member {
       padding: 20px 0; }
