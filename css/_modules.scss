@@ -78,7 +78,7 @@ header {
 		}
 	}
 	&.-dark {
-		background: $blue-gray;
+		//background: $blue-gray;
 		color: #fff;
 	}
 }
@@ -86,6 +86,7 @@ header {
 
 // Team module
 .team {
+	background: url(../img/bg_pixels.jpg) left top repeat;
 	 .row {
 	 	margin-bottom: 30px;
 	 }
@@ -107,7 +108,7 @@ header {
 	h4 + p {
 		color: lighten($blue-gray, 20);
 		font-size: em(14px);
-		margin-top: 3px;
+		margin-top: 0;
 	}
 	&:hover {
 		img {

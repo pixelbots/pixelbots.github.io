@@ -109,11 +109,12 @@ header {
     .layer h3:first-child {
       margin-top: 20px; }
   .layer.-dark {
-    background: #242e30;
     color: #fff; }
 
-.team .row {
-  margin-bottom: 30px; }
+.team {
+  background: url(../img/bg_pixels.jpg) left top repeat; }
+  .team .row {
+    margin-bottom: 30px; }
 
 .team__member {
   text-align: center; }
@@ -129,7 +130,7 @@ header {
   .team__member h4 + p {
     color: #50666a;
     font-size: 0.66667em;
-    margin-top: 3px; }
+    margin-top: 0; }
   .team__member:hover img {
     opacity: 1; }
   @media only screen and (max-width: 767px) {
