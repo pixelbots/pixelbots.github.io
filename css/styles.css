@@ -148,7 +148,7 @@ footer {
 .footer__logo {
   background: url(../img/logo_alt.png) left top no-repeat;
   background-size: 100%;
-  margin: 60px auto 0 auto;
+  margin: 100px auto 0 auto;
   max-width: 175px;
   min-height: 235px;
   overflow: hidden;
