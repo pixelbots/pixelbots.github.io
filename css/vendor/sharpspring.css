@@ -1,33 +1,30 @@
-// Sharpspring form
-.footer__form {
-	max-height: 500px !important; // overwrite Sharpspring inline styles
-}
-iframe {
-	max-height: 500px !important;
-	width: 90%;
-	@include breakpoint(mobile-portrait) {
-		width: 100%;
-	}
-}
+/* Sharpspring form */
+
 .sharpspring_form {
 	width: 100%;
 }
 .sharpspring_form .field {
 	padding-bottom: 15px;
 }
-.sharpspring_form input, .sharpspring_formtextarea {
-	background-color: #f8f8f8;
-	border: 1px solid #dfdfdf;
+.sharpspring_form input, .sharpspring_form textarea {
+	background-color: #eee;
+	border: 4px solid #fff;
 	color: #555;
 	font-size: 18px;
 	padding: 10px;
 	margin-top: 7px;
+}
+.sharpspring_form input:focus, .sharpspring_form textarea:focus {
+	border: 4px solid #449bbe;
+	box-shadow: none;
+outline: none;
 }
 .sharpspring_form label {
     color: #aaa;
     font-family: "brandon-grotesque", sans-serif;
     font-size: 14px;
     font-weight: 300;
+	margin-left: 4px;
     text-transform: uppercase;
 }
 .sharpspring_form label.error {
@@ -46,10 +43,10 @@ iframe {
   	border-radius: 1px;
   	color: #fff;
   	display: inline-block;
-  	font-family: "brandon-grotesque", sans-serif;
-  	font-size: 0.66667em;
-  	font-weight: 400;
-  	padding: 0.85em 1.5em;
+  	font-family: Helvetica, sans-serif;
+  	font-size: 14px;
+  	font-weight: 200;
+  	padding: 15px 20px;
   	text-decoration: none;
   	text-shadow: 0 1px 0 #50666a;
   	text-transform: uppercase; 
