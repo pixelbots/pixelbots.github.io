@@ -1,0 +1,63 @@
+// Sharpspring form
+.footer__form {
+	max-height: 500px !important; // overwrite Sharpspring inline styles
+}
+iframe {
+	max-height: 500px !important;
+	width: 90%;
+	@include breakpoint(mobile-portrait) {
+		width: 100%;
+	}
+}
+.sharpspring_form {
+	width: 100%;
+}
+.sharpspring_form .field {
+	padding-bottom: 15px;
+}
+.sharpspring_form input, .sharpspring_formtextarea {
+	background-color: #f8f8f8;
+	border: 1px solid #dfdfdf;
+	color: #555;
+	font-size: 18px;
+	padding: 10px;
+	margin-top: 7px;
+}
+.sharpspring_form label {
+    color: #aaa;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.sharpspring_form label.error {
+	color: #fff;
+    margin-left: 0;
+    box-shadow: none;
+    padding: 5px 10px;
+}
+.sharpspring_form #submit_button {
+	background-color: #449bbe;
+  	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#62abc9), to(#449bbe));
+  	background-image: -webkit-linear-gradient(top, #62abc9, #449bbe);
+  	background-image: -moz-linear-gradient(top, #62abc9, #449bbe);
+  	background-image: -ms-linear-gradient(top, #62abc9, #449bbe);
+  	background-image: -o-linear-gradient(top, #62abc9, #449bbe);
+  	border-radius: 1px;
+  	color: #fff;
+  	display: inline-block;
+  	font-family: "brandon-grotesque", sans-serif;
+  	font-size: 0.66667em;
+  	font-weight: 400;
+  	padding: 0.85em 1.5em;
+  	text-decoration: none;
+  	text-shadow: 0 1px 0 #50666a;
+  	text-transform: uppercase; 
+}
+.sharpspring_form #submit_button:hover {
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#75b5cf), to(#57a5c5));
+    background-image: -webkit-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -moz-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -ms-linear-gradient(top, #75b5cf, #57a5c5);
+    background-image: -o-linear-gradient(top, #75b5cf, #57a5c5); 
+}
